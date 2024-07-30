@@ -1,10 +1,9 @@
 import { useState } from "react"
 
 export default function TodoInput(props) {
-    const {handleAddTodos} = props
+    const {handleAddTodos, todoValue, setTodoValue} = props
 
-    const [todoValue, setTodoValue] = useState("")
-
+    
     return (
         <header>
             <input value={todoValue} onChange={(e) => {
